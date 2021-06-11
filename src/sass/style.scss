@@ -97,6 +97,21 @@ h1 {
     display: flex;
     justify-content: space-between;
 }
+.logo {
+    // transition: all 1s ease-out 0s;
+    animation: logo_anim 4s ease-in-out infinite;
+}
+.logo:hover {
+    animation-play-state: paused;
+}
+@keyframes logo_anim {
+    0%, 100% {
+        transform: scale(1, 1);
+    }
+    50% {
+        transform: scale(-1, 1);
+    }
+}
 
 .logo img {
     max-width: 200px;
@@ -178,9 +193,6 @@ h1 {
     top: 20px;
     padding-top: 20px;
 }
-// .sub-menu__list li {
-//     min-width: 150px;
-// }
 
 .sub-menu__link {
     display: inline-block;
@@ -289,7 +301,7 @@ h1 {
 .content {
     position: relative;
     z-index: 5;
-    background: url('../img/bg4.jpg')center center/cover no-repeat;
+    background: url('../img/content_bg.jpg')center center/cover no-repeat;
     width: 100%;
 }
 
