@@ -135,8 +135,14 @@ h1 {
     margin-right: 30px;
 }
 
-.menu a:hover {
-    font-size: 23px;
+.menu a:hover:after {
+    content: "";
+    background: url('../icons/menu_up.svg') center center/cover no-repeat;
+    display: block;
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    z-index: 2;
 }
 
 .menu__list {
@@ -145,12 +151,26 @@ h1 {
 
 .menu__list>li {
     margin-right: 30px;
+    transform: translate(600%, -100%);
+    transition: all 0.3s ease 0s;
 }
 
 .menu li {
     position: relative;
-}
 
+}
+.menu__list._active li:nth-child(1) {
+    transition: all 0.5s ease 0s;
+}
+.menu__list._active li:nth-child(2) {
+    transition: all 0.5s ease 0.1s;
+}
+.menu__list._active li:nth-child(3) {
+    transition: all 0.5s ease 0.3s;
+}
+.menu__list._active li {
+    transform: translate(0px, 0px);
+}
 .sub-menu__list {
     display: none;
     position: absolute;
@@ -158,6 +178,9 @@ h1 {
     top: 20px;
     padding-top: 20px;
 }
+// .sub-menu__list li {
+//     min-width: 150px;
+// }
 
 .sub-menu__link {
     display: inline-block;
