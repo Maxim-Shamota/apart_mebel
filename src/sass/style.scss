@@ -98,7 +98,6 @@ h1 {
     justify-content: space-between;
 }
 .logo {
-    // transition: all 1s ease-out 0s;
     animation: logo_anim 4s ease-in-out infinite;
 }
 .logo:hover {
@@ -166,8 +165,7 @@ h1 {
 
 .menu__list>li {
     margin-right: 30px;
-    transform: translate(600%, -100%);
-    transition: all 0.3s ease 0s;
+    transform: scale(0);
 }
 
 .menu li {
@@ -175,16 +173,16 @@ h1 {
 
 }
 .menu__list._active li:nth-child(1) {
-    transition: all 0.5s ease 0s;
+    transition: all 0.8s ease-out 0s;
 }
 .menu__list._active li:nth-child(2) {
-    transition: all 0.5s ease 0.1s;
+    transition: all 0.8s ease-out 0.3s;
 }
 .menu__list._active li:nth-child(3) {
-    transition: all 0.5s ease 0.3s;
+    transition: all 0.8s ease-out 0.6s;
 }
 .menu__list._active li {
-    transform: translate(0px, 0px);
+    transform: scale(1);
 }
 .sub-menu__list {
     display: none;
@@ -347,9 +345,17 @@ h1 {
 
 .comment__name {
     font-weight: 700;
+    box-shadow: -7px -7px 12px rgba(255, 255, 255, 0.9), 6px 6px 12px rgba(166, 180, 200, 0.8);
+    background-color: rgba(231, 236, 230, .85);
+    width: 196px;
+    height: 30px;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 33px;
 }
 
 .comment__title {
+    position: relative;
     display: flex;
     justify-content: space-between;
     transform: scale(0);
@@ -360,18 +366,35 @@ h1 {
     transform: scale(1);
 }
 
-.comment__avatar {
-    background-color: gray;
+.comment__avatar-box .comment__avatar {
+    background-color: rgba(231, 236, 230, .85);
+    box-shadow: -7px -7px 12px rgba(255, 255, 255, 0.9), 6px 6px 12px rgba(166, 180, 200, 0.8);
     width: 130px;
     height: 130px;
     border-radius: 50%;
 }
+.avatar1 {
+    background: url('../img/man.png') center center/cover no-repeat;
+    padding-top: 10px;
+}
+.avatar2 {
+    background: url('../img/couple.png') center center/cover no-repeat;
+}
+.avatar3 {
+    background: url('../img/woman.png') center center/cover no-repeat;
+}
 
 .comment__text {
-    padding-top: 30px;
+    padding: 20px;
     transform: translate(0px, 50%);
     opacity: 0;
     transition: all 0.5s ease 0s;
+
+    min-height: 220px;
+    background-color: rgba(231, 236, 230, .85);
+    box-shadow: -7px -7px 12px rgba(255, 255, 255, 0.9), 6px 6px 12px rgba(166, 180, 200, 0.8);
+    border-radius: 30px;
+    margin-top: 30px;
 }
 
 .comment._active .comment__text {
