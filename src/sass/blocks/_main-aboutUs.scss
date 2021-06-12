@@ -1,0 +1,19 @@
+.aboutUs {
+    position: relative;
+    z-index: 5;
+    background: url('../img/aboutUs_bg.jpg')center center/cover no-repeat;
+    width: 100%;
+}
+
+.aboutUs__container p {
+    margin: 0px 0px 50px 0px;
+}
+
+.aboutUs-title {
+    font-size: 50px;
+    padding-bottom: 40px;
+}
+
+.aboutUs__text {
+    overflow: hidden;
+}

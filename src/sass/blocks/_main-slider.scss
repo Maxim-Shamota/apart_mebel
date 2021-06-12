@@ -1,0 +1,25 @@
+html, body, .slider, .ring, .img {
+    width:100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    user-select:none;
+  }
+
+ .slider {
+    // overflow:hidden;
+    background: url('../../img/slider_bg.jpg') center center/cover no-repeat;
+    min-height: 100vh;
+  }
+  
+  .slider div,.slider svg {
+    position: absolute;
+  }
+  
+  .slider_container {
+    perspective: 2000px;
+    width: 300px;
+    height: 400px;  
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+  }
