@@ -166,11 +166,23 @@ body.touch .arrow {
     top: 20px;
     padding-top: 20px;
 }
+// .sub-menu__list {
+//     transform: scale(0);
+//     position: absolute;
+//     left: 0;
+//     top: 20px;
+//     padding-top: 20px;
+// }
 
 .sub-menu__link {
     display: inline-block;
     padding: 5px 10px;
+    transition: all 0.8s ease-out 0s;
 }
+
+// .menu__list._active li:nth-child(1) {
+//     transition: all 0.8s ease-out 0s;
+// }
 
 .sub-sub-menu__list {
     display: none;
@@ -197,4 +209,3 @@ body.touch .arrow {
     transform: translate(0px, 0px);
 }
 
-@import './main-video';
