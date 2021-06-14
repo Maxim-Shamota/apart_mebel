@@ -38,7 +38,7 @@ h1 {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-aboutUs: center;
+    justify-content: center;
     align-items: center;
 }
 .video {
