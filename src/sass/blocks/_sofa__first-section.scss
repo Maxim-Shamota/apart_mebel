@@ -1,15 +1,50 @@
 .sofa__first-section {
-    margin-top: 50vh;
-    padding: 100px;
-    width: 100%;
-    height: 100vh;
-    background: url('../../img/bg3.jpg') center center/cover no-repeat;
+    // background: url('../../img/bg3.jpg') center center/cover no-repeat;
+    // padding: 100px;
+    // width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+.sofa__container {
     color: #fff;
+    margin-top: 50vh;
+    position: absolute;
+    // width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    button {
+        position: relative;
+        z-index: 1;
+        border: none;
+        outline: none;
+        background: #fff;
+        font-size: 1.2em;
+        padding: 15px 30px;
+        box-shadow: 10px 10px 30px rgba($color: #000000, $alpha: 0.25);
+    }
+}
+.block {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    box-shadow: 10px 10px 30px rgba($color: #000000, $alpha: 0.25);
+}
+.block:nth-child(3n + 2) {
+    background: #444;
+}
+.block:nth-child(3n + 3) {
+    background: #ff9213;
 }
 
 
 @media (max-width: 991px) {
-    .sofa__first-section {
-        padding: 40px;
-    }
+    // .sofa__first-section {
+    //     padding: 40px;
+    // }
 }

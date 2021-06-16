@@ -14,6 +14,18 @@
     justify-content: flex-end;
     align-items: center;
     transition: 1s;
+    z-index: 2;
+
+    &-arrow_down {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transform: rotate(180deg);
+        transition: 0.5s;
+    }
 
     nav {
         position: relative;
@@ -47,6 +59,10 @@
 
 .sofa__header.sticky {
     height: 80px;
+    .sofa__header-arrow_down {
+        visibility: hidden;
+        transform: rotate(0);
+    }
     nav {
         ul {
             transform: translateX(0);
@@ -87,17 +103,6 @@
     transition: 1s;
     text-decoration: none !important;
     z-index: 1;
-}
-
-section {
-    margin-top: 50vh;
-    padding: 100px;
-}
-section h2 {
-    font-size: 3em;
-}
-section p {
-    font-size: 1.2em;
 }
 
 @media (max-width: 991px) {

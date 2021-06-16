@@ -1,11 +1,37 @@
-<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" aboutus="width=device-width, initial-scale=1.0"><meta http-equiv="X-UA-Compatible" aboutus="ie=edge"><title>ApartMebel</title><meta name="title" aboutus="ApartMebel"><meta name="description" aboutus="Наша мебель, как произведение искусства"><link rel="shortcut icon" href="./icons/favicon.ico"><link rel="stylesheet" href="./css/style.min.css"></head><body class="sofa__body"><header class="sofa__header"><img src="./img/bruklin2.jpg" alt="sofa" class="sofa__banner"> <a href="#" class="sofa__logo">Диваны</a><div class="sofa__header-toggle"></div><nav><ul><li><a href="/">Главная</a></li><li><a href="#">Мебель</a></li><li><a href="#">Предметы интерьера</a></li><li><a href="#">Информация</a></li></ul></nav></header><section><h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, tempora.</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, quo nobis id labore temporibus placeat quasi ipsam amet possimus. Rerum non, ab, illo officia obcaecati earum est minus optio pariatur alias debitis distinctio dicta? Magnam adipisci suscipit ipsa ex nam cumque blanditiis beatae, natus omnis aspernatur sequi quae qui nulla incidunt recusandae illo. Corrupti ducimus dolores non nemo eligendi eos exercitationem! Blanditiis cum ducimus praesentium rem nisi incidunt inventore suscipit veritatis maiores nostrum eum, in, hic, quibusdam iste sunt velit quaerat? Ipsum quis, provident rerum dicta praesentium reiciendis quasi omnis repellendus aliquid, laudantium, cum nam corrupti perferendis. Quos minima pariatur impedit quas rerum, veritatis rem nam inventore facilis laborum. Officiis, omnis iusto autem aliquam odio quod suscipit, cum excepturi fuga deleniti esse quia accusantium dolor, eos odit recusandae ipsum possimus eligendi deserunt eveniet? Vitae qui consequatur commodi assumenda dolorem. Natus sapiente ipsam aut aliquam! Saepe aperiam inventore similique consequatur officia ab. Sit mollitia, numquam, earum beatae rem neque vel quibusdam assumenda sint quod ex cumque! Asperiores libero distinctio blanditiis iure voluptas, beatae porro nihil, voluptatem molestiae recusandae esse sit, nobis excepturi maiores deleniti natus labore vel dolore eos modi saepe numquam reiciendis? Eveniet blanditiis nobis nesciunt voluptatem reiciendis aut cupiditate, est voluptas assumenda sequi id velit alias vitae ipsum temporibus voluptate quod! Doloribus culpa sit sunt laudantium aspernatur voluptate quaerat, necessitatibus consequuntur labore sint, quibusdam ullam officia corporis provident veniam! Odio nobis facere dolorem, accusantium rem minus. Praesentium earum eius repellat ut deleniti magnam, amet vitae, quasi eligendi deserunt dolor excepturi, perferendis quia laborum quod quaerat quisquam perspiciatis quae blanditiis vero in est adipisci dolorem! Asperiores porro, minus praesentium dolor rem hic perspiciatis in expedita officiis libero aliquid, nulla pariatur facere assumenda alias omnis facilis est tempore modi sit ducimus at deserunt? Veniam, eos! Minus odit temporibus blanditiis eum! Ipsam nemo sed dolorem. Ratione saepe rerum velit debitis quas officia pariatur beatae officiis qui voluptate harum quaerat porro distinctio, delectus aliquid doloribus, molestias obcaecati ab similique sed aperiam accusantium autem deleniti ad? Perferendis neque beatae tenetur nobis quod, vitae eligendi ut dolor sunt odio, magni et, facere aliquid animi qui est molestias? Aspernatur ipsum totam sequi sit? Veritatis, ipsum suscipit architecto enim sint eum, necessitatibus quibusdam aut cum ipsam dolores? Earum qui error reiciendis, porro repellendus praesentium consequuntur sit, enim tempore necessitatibus temporibus voluptates aliquam ab explicabo quam. Saepe sit omnis culpa! Autem tempore molestiae debitis deserunt eos nulla alias molestias blanditiis. Reprehenderit vitae necessitatibus cupiditate voluptatem aut tempora consectetur inventore officia, nobis repudiandae nostrum accusamus dolores pariatur sunt, tenetur possimus. Qui, quaerat iusto et facilis saepe vero rem aut consequatur aliquid, cumque harum inventore vitae tenetur, unde totam excepturi! Veniam maiores saepe sint molestiae nisi cupiditate iste, maxime deserunt sit soluta obcaecati dolorum quia consequuntur asperiores voluptas consectetur accusamus, sed ad eveniet, dolores dolore qui animi quasi sequi? Similique, iusto incidunt ducimus eligendi aut eius expedita blanditiis, harum, eum possimus laudantium numquam consequatur! Voluptatibus dolorum, cumque porro, magni recusandae consectetur delectus, distinctio explicabo quasi pariatur qui voluptate? Illo, placeat.</p></section><script>// анимация header-а на страницах товаров
+<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" aboutus="width=device-width, initial-scale=1.0"><meta http-equiv="X-UA-Compatible" aboutus="ie=edge"><title>ApartMebel</title><meta name="title" aboutus="ApartMebel"><meta name="description" aboutus="Наша мебель, как произведение искусства"><link rel="shortcut icon" href="./icons/favicon.ico"><link rel="stylesheet" href="./css/style.min.css"></head><body class="sofa__body"><header class="sofa__header"><img src="./img/bruklin2.jpg" alt="sofa" class="sofa__banner"><!-- <div class="sofa__header-title"> --> <a href="#" class="sofa__logo">Диваны</a><!--  --><!-- </div> --><div class="sofa__header-toggle"></div><nav><ul><li><a href="/">Главная</a></li><li><a href="#">Мебель</a></li><li><a href="#">Предметы интерьера</a></li><li><a href="#">Информация</a></li></ul></nav><img src="./icons/arrow-design.svg" alt="arrow-down" class="sofa__header-arrow_down"></header><section class="sofa__first-section"><div class="sofa__container container"><button onclick="generate()">update</button></div></section><script src="./js/anime.min.js"></script><script>// анимация header-а на страницах товаров
         window.addEventListener('scroll', function () {
             const sofaHeader = this.document.querySelector('.sofa__header');
             sofaHeader.classList.toggle('sticky', window.scrollY > 0);
         });
 
         const navigation = document.querySelector('nav')
-        document.querySelector('.sofa__header-toggle').onclick = function() {
+        document.querySelector('.sofa__header-toggle').onclick = function () {
             this.classList.toggle('active');
             navigation.classList.toggle('active');
-        }</script><script src="js/script.js"></script></body></html>
+        }
+
+        // генерация квадратов в фон
+        // const anime = require('animejs');
+        const container = document.querySelector('.sofa__container');
+        for (let i = 1; i <= 200; i++) {
+            const blocks = document.createElement('div');
+            blocks.classList.add('block');
+            container.appendChild(blocks);
+        }
+
+        function generate() {
+            anime({
+                targets: '.block',
+                translateX: function () {
+                    return anime.random(-700, 700)
+                },
+                translateY: function () {
+                    return anime.random(-700, 700)
+                },
+                scale: function () {
+                    return anime.random(1, 5)
+                }
+            })
+        }
+
+        generate();</script><script src="js/script.js"></script></body></html>
