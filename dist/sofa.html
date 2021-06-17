@@ -1,4 +1,9 @@
-<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" aboutus="width=device-width, initial-scale=1.0"><meta http-equiv="X-UA-Compatible" aboutus="ie=edge"><title>ApartMebel</title><meta name="title" aboutus="ApartMebel"><meta name="description" aboutus="Наша мебель, как произведение искусства"><link rel="shortcut icon" href="./icons/favicon.ico"><link rel="stylesheet" href="./css/style.min.css"></head><body class="sofa__body"><header class="sofa__header"><img src="./img/bruklin2.jpg" alt="sofa" class="sofa__banner"><!-- <div class="sofa__header-title"> --> <a href="#" class="sofa__logo">Диваны</a><!--  --><!-- </div> --><div class="sofa__header-toggle"></div><nav><ul><li><a href="/">Главная</a></li><li><a href="#">Мебель</a></li><li><a href="#">Предметы интерьера</a></li><li><a href="#">Информация</a></li></ul></nav><img src="./icons/arrow-design.svg" alt="arrow-down" class="sofa__header-arrow_down"></header><section class="sofa__first-section"><div class="sofa__container container"><button onclick="generate()">update</button></div></section><script src="./js/anime.min.js"></script><script>// анимация header-а на страницах товаров
+<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" aboutus="width=device-width, initial-scale=1.0"><meta http-equiv="X-UA-Compatible" aboutus="ie=edge"><title>ApartMebel</title><meta name="title" aboutus="ApartMebel"><meta name="description" aboutus="Наша мебель, как произведение искусства"><link rel="shortcut icon" href="./icons/favicon.ico"><link rel="stylesheet" href="./css/style.min.css"></head><body class="sofa__body"><div class="sofa__wrapper"><header class="sofa__header"><img src="./img/bruklin2.jpg" alt="sofa" class="sofa__banner"> <a href="#" class="sofa__logo">Диваны</a><div class="sofa__header-toggle"></div><nav><ul><li><a href="/">Главная</a></li><li><a href="#">Мебель</a></li><li><a href="#">Предметы интерьера</a></li><li><a href="#">Информация</a></li></ul></nav><img src="./icons/arrow-design.svg" alt="arrow-down" class="sofa__header-arrow_down"></header><section class="sofa__bg-first"></section><!-- <section class="sofa__first-section">
+            <div class="sofa__first-section_wrapper"></div>
+            <div class="sofa__container">
+                <button onclick="generate()">update</button>
+            </div>
+        </section> --></div><script src="./js/anime.min.js"></script><script>// анимация header-а на страницах товаров
         window.addEventListener('scroll', function () {
             const sofaHeader = this.document.querySelector('.sofa__header');
             sofaHeader.classList.toggle('sticky', window.scrollY > 0);
@@ -12,26 +17,26 @@
 
         // генерация квадратов в фон
         // const anime = require('animejs');
-        const container = document.querySelector('.sofa__container');
-        for (let i = 1; i <= 200; i++) {
-            const blocks = document.createElement('div');
-            blocks.classList.add('block');
-            container.appendChild(blocks);
-        }
+        // const container = document.querySelector('.sofa__container');
+        // for (let i = 1; i <= 200; i++) {
+        //     const blocks = document.createElement('div');
+        //     blocks.classList.add('block');
+        //     container.appendChild(blocks);
+        // }
 
-        function generate() {
-            anime({
-                targets: '.block',
-                translateX: function () {
-                    return anime.random(-700, 700)
-                },
-                translateY: function () {
-                    return anime.random(-700, 700)
-                },
-                scale: function () {
-                    return anime.random(1, 5)
-                }
-            })
-        }
+        // function generate() {
+        //     anime({
+        //         targets: '.block',
+        //         translateX: function () {
+        //             return anime.random(-700, 700)
+        //         },
+        //         translateY: function () {
+        //             return anime.random(-1100, 1100)
+        //         },
+        //         scale: function () {
+        //             return anime.random(1, 5)
+        //         }
+        //     })
+        // }
 
-        generate();</script><script src="js/script.js"></script></body></html>
+        // generate();</script><script src="js/script.js"></script></body></html>

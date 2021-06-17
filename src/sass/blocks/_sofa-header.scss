@@ -2,6 +2,10 @@
     min-height: 1000px;
     transform-style: none;
 }
+.sofa__wrapper {
+    background-color: rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+}
 
 .sofa__header {
     position: fixed;
