@@ -6,15 +6,16 @@
     &_container {
         position: relative;
     }
-    padding: 50px 0;
+    padding: 50px 0 0 0;
     width: 100%;
-    min-height: 100vh;
+    min-height: 50vh;
     background: url('../../img/footer_bg3.jpg') center center/cover no-repeat;
     z-index: 1;
     object-fit: cover;
     &_up {
         display: flex;
         justify-content: space-between;
+        padding-bottom: 200px;
         &-left {
             width: 400px;
             &>p {
@@ -180,6 +181,8 @@
         }
     }
     &_down {
+        position: absolute;
+        bottom: 0;
         &-text {
             font-size: 15px;
             text-align: center;
@@ -187,7 +190,6 @@
             background-color: rgba(231, 236, 230, .85);
             border-radius: 10px;
             margin-left: 25px;
-            margin-top: 120px;
             padding: 2px;
             line-height: 20px;
         }
