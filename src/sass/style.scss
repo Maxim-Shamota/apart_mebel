@@ -9,6 +9,10 @@
     box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+    width: 0;
+  }
+
 a {
     text-decoration: none;
 }
@@ -58,7 +62,10 @@ body {
 @import './blocks/main-slider';
 @import './blocks/main-comments';
 @import './blocks/main-footer';
+@import './blocks/cards';
 @import './blocks/goods-header';
-@import './blocks/goods__first-section';
+@import './blocks/goods__sections';
+@import './blocks/sofa';
 @import './blocks/sofa-kinder';
 @import './blocks/cabinet-furniture';
+@import './blocks/couch';

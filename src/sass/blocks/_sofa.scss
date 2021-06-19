@@ -1,0 +1,24 @@
+
+.sofa__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding-top: 70vh;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: -100px;
+    left: 25%;
+}
+.sofa__container2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    padding: 0 130px;
+}
+

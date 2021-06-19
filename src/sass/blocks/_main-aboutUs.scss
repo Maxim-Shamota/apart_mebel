@@ -1,4 +1,5 @@
 .aboutUs {
+    padding-top: 30px;
     position: relative;
     z-index: 5;
     background: url('../img/aboutUs_bg.jpg')center center/cover no-repeat;
@@ -16,14 +17,17 @@
 
 .aboutUs__text {
     overflow: hidden;
+    font-size: 24px;
+    line-height: 32px;
 }
 
 .aboutUs__gallery {
-    margin: 30px 0;
+    margin: 30px 0px 50px;
     display: grid;
-    grid-template: repeat(2, 280px) / repeat(4, 280px);
+    grid-template: repeat(2, 270px) / repeat(4, 270px);
     grid-auto-rows: 280px;
     gap: 10px;
+    padding: 0 10px;
 
     .gorizont1 {
         grid-row: 1 / 2;
@@ -60,4 +64,16 @@
         }
     }
 
+}
+
+@media (max-width: 1200px) {
+    .aboutUs__gallery {
+        grid-template-columns: repeat(auto-fit, 270px);
+        grid-auto-rows: 270px;
+        justify-content: space-around;
+        .gorizont1, .gorizont2, .vertical {
+            grid-row: unset;
+            grid-column: unset;
+        }
+    }
 }

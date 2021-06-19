@@ -53,6 +53,7 @@ body.touch .arrow {
     display: flex;
     justify-content: space-between;
 }
+
 .logo_tel a {
     color: #fff;
     display: block;
@@ -62,6 +63,7 @@ body.touch .arrow {
     margin-top: 5px;
     letter-spacing: 3px;
 }
+
 .logo_tel:hover:after {
     content: "";
     background: url('../icons/menu_up.svg') center center/cover no-repeat;
@@ -72,16 +74,22 @@ body.touch .arrow {
     z-index: 2;
     margin-top: -5px;
 }
+
 .logo {
     animation: logo_anim 4s ease-in-out infinite;
 }
+
 .logo:hover {
     animation-play-state: paused;
 }
+
 @keyframes logo_anim {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: scale(1, 1);
     }
+
     50% {
         transform: scale(-1, 1);
     }
@@ -147,18 +155,23 @@ body.touch .arrow {
     position: relative;
 
 }
+
 .menu__list._active li:nth-child(1) {
     transition: all 0.8s ease-out 0s;
 }
+
 .menu__list._active li:nth-child(2) {
     transition: all 0.8s ease-out 0.3s;
 }
+
 .menu__list._active li:nth-child(3) {
     transition: all 0.8s ease-out 0.6s;
 }
+
 .menu__list._active li {
     transform: scale(1);
 }
+
 .sub-menu__list {
     display: none;
     position: absolute;
@@ -166,6 +179,7 @@ body.touch .arrow {
     top: 20px;
     padding-top: 20px;
 }
+
 // .sub-menu__list {
 //     transform: scale(0);
 //     position: absolute;
@@ -209,3 +223,8 @@ body.touch .arrow {
     transform: translate(0px, 0px);
 }
 
+// @media only screen and (max-device-width: 321px) {
+//     .full-screen__title {
+//         font-size: 92px;
+//     }
+// }
