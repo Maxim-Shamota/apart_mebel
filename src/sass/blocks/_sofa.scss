@@ -1,4 +1,3 @@
-
 .sofa__container {
     display: flex;
     justify-content: space-around;
@@ -12,6 +11,7 @@
     bottom: -100px;
     left: 25%;
 }
+
 .sofa__container2 {
     display: flex;
     justify-content: space-between;
@@ -22,3 +22,106 @@
     padding: 0 130px;
 }
 
+.goods__wrapper {
+    overflow: hidden;
+}
+
+.mainSection {
+    position: relative;
+    left: 0;
+    min-height: 100vh;
+    transition: 0.5s;
+}
+
+.mainSection.active {
+    left: 350px;
+    .goods__logo {
+        padding-left: 100px;
+    }
+}
+
+#toggle {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    box-shadow: 6px 6px 12px rgba(238, 240, 241, 0.8);
+    background-color: rgba(194, 197, 194, 0.9);
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+#toggle::before {
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 2px;
+    background: #fff;
+    transform: translateY(-5px);
+    transition: 0.2s;
+}
+
+#toggle.active::before {
+    transform: translateY(0px) rotate(45deg);
+}
+
+#toggle.active::after {
+    transform: translateY(0px) rotate(-45deg);
+}
+
+#toggle::after {
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 2px;
+    background: #fff;
+    transform: translateY(5px);
+    transition: 0.2s;
+}
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: -350px;
+    width: 350px;
+    height: 100vh;
+    background-color: rgb(108, 117, 125);
+    transition: 0.5s;
+    padding-top: 80px;
+}
+
+#sidebar.active {
+    left: 0px;
+}
+
+#sidebar ul {
+    position: relative;
+}
+
+#sidebar ul li {
+    list-style: none;
+    display: inline-block;
+    width: 100%;
+    padding: 5px 5px;
+}
+#sidebar ul li ul li:nth-child(1) {
+    margin-top: 10px;
+}
+#sidebar ul li:nth-child(1):hover {
+    background: #03a9f4;
+}
+#sidebar ul li ul li:hover {
+    background: #03a9f4;
+}
+
+#sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+}
