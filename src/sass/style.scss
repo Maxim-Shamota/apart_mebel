@@ -51,12 +51,12 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 50px 30px;
-    font-size: 18px;
     line-height: 150%;
     color: #000;
 }
 
 @import './blocks/main-header';
+@import './blocks/main-menu';
 @import './blocks/main-video';
 @import './blocks/main-aboutUs';
 @import './blocks/main-slider';
@@ -65,7 +65,6 @@ body {
 @import './blocks/cards';
 @import './blocks/goods-header';
 @import './blocks/goods__sections';
-@import './blocks/sofa';
 @import './blocks/sofa-kinder';
 @import './blocks/cabinet-furniture';
 @import './blocks/couch';
