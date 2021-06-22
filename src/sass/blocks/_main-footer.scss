@@ -6,34 +6,40 @@
     &_container {
         position: relative;
     }
+
     padding: 50px 0 0 0;
     width: 100%;
     min-height: 50vh;
     background: url('../../img/footer_bg3.jpg') center center/cover no-repeat;
     z-index: 1;
     object-fit: cover;
+
     &_up {
         display: flex;
         justify-content: space-between;
         padding-bottom: 200px;
+
         &-left {
             width: 400px;
+
             &>p {
                 font-size: 50px;
                 padding-left: 25px;
                 padding-bottom: 30px;
             }
+
             &_social {
                 display: flex;
                 justify-content: space-around;
                 margin-bottom: 30px;
+
                 &_item {
                     width: 60px;
                     height: 60px;
-                    box-shadow: -7px -7px 12px rgba(255, 255, 255, 0.9), 6px 6px 12px rgba(166, 180, 200, 0.8);
-                    background-color: rgba(231, 236, 230, .85);
+                    @include mainShadow;
                     border-radius: 50%;
                 }
+
                 .icon-instagram path {
                     fill: transparent;
                     stroke-width: 15;
@@ -41,136 +47,160 @@
                     stroke-dasharray: 1650;
                     stroke-dashoffset: 0;
                 }
+
                 .icon-facebook path {
                     fill: transparent;
                     stroke-width: 20;
                     stroke: #3b5998;
-                    stroke-dasharray:2700;
+                    stroke-dasharray: 2700;
                     stroke-dashoffset: 0;
                 }
+
                 .icon-whatsapp path {
                     fill: transparent;
                     stroke-width: 15;
                     stroke: #43d854;
-                    stroke-dasharray:2700;
+                    stroke-dasharray: 2700;
                     stroke-dashoffset: 0;
                 }
+
                 .icon-instagram:hover path {
                     animation: animate_instagram 2s linear forwards;
                 }
+
                 .icon-facebook:hover path {
                     animation: animate_facebook 2s linear forwards;
                 }
+
                 .icon-whatsapp:hover path {
                     animation: animate_whatsapp 2s linear forwards;
                 }
+
                 @keyframes animate_instagram {
                     0% {
                         stroke-dashoffset: 0;
                     }
+
                     40% {
                         stroke-dashoffset: 1650;
                     }
+
                     80% {
                         stroke-dashoffset: 3300;
                         fill: transparent;
                     }
+
                     100% {
                         stroke-dashoffset: 3300;
                         fill: #d6249f;
                     }
                 }
+
                 @keyframes animate_facebook {
                     0% {
                         stroke-dashoffset: 0;
                     }
+
                     40% {
                         stroke-dashoffset: 2700;
                     }
+
                     80% {
                         stroke-dashoffset: 5400;
                         fill: transparent;
                     }
+
                     100% {
                         stroke-dashoffset: 5400;
                         fill: #3b5998;
                     }
                 }
+
                 @keyframes animate_whatsapp {
                     0% {
                         stroke-dashoffset: 0;
                     }
+
                     40% {
                         stroke-dashoffset: 2700;
                     }
+
                     80% {
                         stroke-dashoffset: 5400;
                         fill: transparent;
                     }
+
                     100% {
                         stroke-dashoffset: 5400;
                         fill: #43d854;
                     }
                 }
             }
+
             &_address {
                 padding: 20px;
                 margin-left: 25px;
-                box-shadow: -7px -7px 12px rgba(255, 255, 255, 0.9), 6px 6px 12px rgba(166, 180, 200, 0.8);
-                background-color: rgba(231, 236, 230, .85);
+                line-height: 150%;
+                @include mainShadow;
                 border-radius: 10px;
+                font-size: 15px;
+                font-weight: 400;
                 &>a {
                     color: #000;
                 }
+
                 &>p {
                     padding-top: 20px;
                 }
             }
         }
+
         &-right {
             width: 400px;
+
             &>p {
                 font-size: 50px;
                 padding-bottom: 30px;
             }
+
             .footer_form {
                 display: flex;
                 flex-direction: column;
                 align-items: flex-end;
+
                 &-name {
                     width: 100%;
-                    box-shadow: -7px -7px 12px rgba(255, 255, 255, 0.9), 6px 6px 12px rgba(166, 180, 200, 0.8);
-                    background-color: rgba(231, 236, 230, .85);
+                    @include mainShadow;
                     border-radius: 10px;
                     margin-bottom: 10px;
                     border: none;
                     outline: none;
                     padding: 5px 10px;
                 }
+
                 &-tel {
                     width: 100%;
-                    box-shadow: -7px -7px 12px rgba(255, 255, 255, 0.9), 6px 6px 12px rgba(166, 180, 200, 0.8);
-                    background-color: rgba(231, 236, 230, .85);
+                    @include mainShadow;
                     border-radius: 10px;
                     margin-bottom: 20px;
                     border: none;
                     outline: none;
                     padding: 5px 10px;
                 }
+
                 &-text {
                     width: 100%;
-                    box-shadow: -7px -7px 12px rgba(255, 255, 255, 0.9), 6px 6px 12px rgba(166, 180, 200, 0.8);
-                    background-color: rgba(231, 236, 230, .85);
+                    @include mainShadow;
                     border-radius: 10px;
                     margin-bottom: 20px;
-                    resize:none;
+                    resize: none;
                     border: none;
                     outline: none;
                     padding: 5px 10px;
                 }
+
                 &-button {
-                    box-shadow: -7px -7px 12px rgba(255, 255, 255, 0.9), 6px 6px 12px rgba(166, 180, 200, 0.8);
-                    background-color: rgba(231, 236, 230, .85);
+                    @include mainShadow;
                     border-radius: 10px;
                     width: 150px;
                     border: none;
@@ -180,14 +210,15 @@
             }
         }
     }
+
     &_down {
         position: absolute;
         bottom: 0;
+
         &-text {
             font-size: 15px;
             text-align: center;
-            box-shadow: -7px -7px 12px rgba(255, 255, 255, 0.9), 6px 6px 12px rgba(166, 180, 200, 0.8);
-            background-color: rgba(231, 236, 230, .85);
+            @include mainShadow;
             border-radius: 10px;
             margin-left: 25px;
             padding: 2px;

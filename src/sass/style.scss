@@ -1,5 +1,19 @@
 @import 'libs/bootstrap-reboot.min';
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+@import './base/variables';
+@import './base/mixins';
+@import './blocks/main-header';
+@import './blocks/main-menu';
+@import './blocks/main-video';
+@import './blocks/main-aboutUs';
+@import './blocks/main-slider';
+@import './blocks/main-comments';
+@import './blocks/main-footer';
+@import './blocks/cards';
+@import './blocks/goods-header';
+@import './blocks/goods__sections';
+@import './blocks/cabinet-furniture';
+@import './blocks/couch';
 
 *::after,
 *::before {
@@ -42,7 +56,7 @@ body {
     height: 100%;
     line-height: 1;
     font-size: 14px;
-    background-color: #333;
+    background-color: $main-bg;
     color: #fff;
     font-family: 'Poppins', sans-serif;
 }
@@ -51,20 +65,6 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 50px 30px;
-    line-height: 150%;
     color: #000;
 }
 
-@import './blocks/main-header';
-@import './blocks/main-menu';
-@import './blocks/main-video';
-@import './blocks/main-aboutUs';
-@import './blocks/main-slider';
-@import './blocks/main-comments';
-@import './blocks/main-footer';
-@import './blocks/cards';
-@import './blocks/goods-header';
-@import './blocks/goods__sections';
-@import './blocks/sofa-kinder';
-@import './blocks/cabinet-furniture';
-@import './blocks/couch';
