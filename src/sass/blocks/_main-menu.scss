@@ -27,7 +27,7 @@
     right: 20px;
     width: 60px;
     height: 60px;
-    box-shadow: 6px 6px 12px rgba(238, 240, 241, 0.8);
+    box-shadow: -3px -3px 6px rgba(255, 255, 255, 0.9);
     background-color: rgba(194, 197, 194, 0.9);
     border-radius: 5px;
     cursor: pointer;
@@ -96,12 +96,14 @@
     margin-top: 10px;
 }
 
-#sidebar ul li:nth-child(1):hover {
-    background: #03a9f4;
+#sidebar ul li:nth-child(1) a:hover {
+    color: #000;
+    font-weight: 700;
 }
 
-#sidebar ul li ul li:hover {
-    background: #03a9f4;
+#sidebar ul li ul li a:hover {
+    color: #000;
+    font-weight: 700;
 }
 
 #sidebar ul li a {
